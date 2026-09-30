@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>شركة كاله للمنتجات الغذائية | Kalleh Food & Dairy</title>
+    <meta
+      name="description"
+      content="شركة كاله للمنتجات الغذائية تقدم الحليب، الألبان، الجبن، الآيس كريم والمكملات الغذائية في الموصل. منتجات عالية الجودة تلبي احتياجات العائلة اليومية."
+    />
+    <meta name="keywords" content="كاله, Kalleh, منتجات غذائية, حليب, لبن, جبن, آيس كريم, الموصل" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Cairo', 'Inter', 'sans-serif'],
+              display: ['Cairo', 'sans-serif'],
+            },
+            colors: {
+              kalleh: {
+                50: '#fff7ed',
+                100: '#ffedd5',
+                200: '#fed7aa',
+                300: '#fdba74',
+                400: '#fb923c',
+                500: '#f97316',
+                600: '#ea580c',
+                700: '#c2410c',
+                800: '#9a3c10',
+                900: '#7c2d12',
+              },
+            },
+            boxShadow: {
+              soft: '0 20px 45px rgba(15, 23, 42, 0.15)',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --bg: #0b0f19;
+        --card: #111827;
+        --panel: #0f172a;
+        --accent: #f59e0b;
+        --accent-2: #ef4444;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --line: rgba(255, 255, 255, 0.08);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Cairo', 'Inter', sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(239, 68, 68, 0.13), transparent 35%),
+          linear-gradient(180deg, #050816 0%, #0b1220 100%);
+        color: var(--text);
+      }
+
+      .glass {
+        background: rgba(15, 23, 42, 0.68);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+
+      .hero-pattern {
+        background-image:
+          linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+
+      .product-glow {
+        box-shadow: 0 30px 60px rgba(249, 115, 22, 0.18);
+      }
+
+      .img-cover {
+        object-fit: cover;
+      }
+
+      .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .hero-card {
+        animation: floatCard 5s ease-in-out infinite;
+      }
+
+      @keyframes floatCard {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden text-white antialiased">
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#top" class="flex items-center gap-3" aria-label="Kalleh Home">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full border border-amber-400 bg-red-800/80 text-lg font-black text-amber-300 shadow-lg shadow-red-900/30">
+            K
+          </div>
+          <div>
+            <div class="font-display text-xl font-black tracking-wide text-white">KALLEH</div>
+            <div class="text-xs font-medium text-amber-300">كاله</div>
+          </div>
+        </a>
+
+        <nav class="hidden items-center gap-8 text-sm font-medium text-slate-200 md:flex">
+          <a href="#hero" class="transition hover:text-amber-300">الرئيسية</a>
+          <a href="#products" class="transition hover:text-amber-300">المنتجات</a>
+          <a href="#about" class="transition hover:text-amber-300">من نحن</a>
+          <a href="#branch" class="transition hover:text-amber-300">فرع الموصل</a>
+          <a href="#contact" class="transition hover:text-amber-300">تواصل</a>
+        </nav>
+
+        <a
+          href="https://wa.me/9647718457634?text=السلام%20عليكم%20شركة%20كاله%20%2C%20أرغب%20بطلب%20جملة%20من%20منتجاتكم."
+          target="_blank"
+          rel="noreferrer"
+          class="hidden rounded-full border border-amber-400/60 bg-amber-500/10 px-5 py-2.5 text-sm font-bold text-amber-300 transition hover:bg-amber-500 hover:text-slate-950 md:inline-flex"
+        >
+          اطلب الآن
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section id="hero" class="hero-pattern relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-l from-transparent via-red-500/5 to-amber-500/10"></div>
+
+        <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.1fr,0.9fr] lg:px-8 lg:py-24">
+          <div class="space-y-7">
+            <span class="inline-flex items-center gap-2 rounded-full border border-red-500/40 bg-red-600/10 px-4 py-2 text-xs font-bold tracking-[0.2em] text-red-300">
+              <span class="inline-block h-2.5 w-2.5 rounded-full bg-red-400"></span>
+              كاله • جودة تمثل الحياة
+            </span>
+
+            <div class="space-y-4">
+              <h1 class="max-w-xl text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+                منتجات غذائية عائلية
+                <span class="block text-amber-300">بمذاق أصيل وثقة لا تتجزأ</span>
+              </h1>
+              <p class="max-w-xl text-base leading-8 text-slate-300 sm:text-lg">
+                من الحليب واللبن إلى الجبن والآيس كريم، تقدم شركة كاله منتجات طازجة عالية الجودة
+                لتغذي كل يوم عائلي بكرامة واهتمام.
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-4 sm:flex-row">
+              <a
+                href="#products"
+                class="inline-flex items-center justify-center rounded-full bg-amber-400 px-7 py-3.5 text-base font-extrabold text-slate-950 transition hover:bg-amber-300"
+              >
+                استكشف المنتجات
+              </a>
+              <a
+                href="https://wa.me/9647718457634?text=السلام%20عليكم%20شركة%20كاله%2C%20أرغب%20في%20طلب%20منتجات%20محددة."
+                target="_blank"
+                rel="noreferrer"
+                class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-3.5 text-base font-bold text-white transition hover:border-amber-400 hover:text-amber-300"
+              >
+                طلب عبر الواتساب
+              </a>
+            </div>
+
+            <div class="flex flex-wrap gap-6 pt-2 text-sm text-slate-300">
+              <div>
+                <span class="block text-2xl font-black text-white">25+</span>
+                <span>سنوات خبرة</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-black text-white">100%</span>
+                <span>جودة وثقة</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-black text-white">24/7</span>
+                <span>خدمة الطلبات</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="hero-card glass relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/70 p-4 shadow-soft">
+              <div class="absolute inset-0 bg-gradient-to-br from-amber-400/15 via-transparent to-red-500/10"></div>
+
+              <div class="relative rounded-[1.5rem] border border-white/10 bg-slate-950 p-4">
+                <div class="mb-4 flex items-center justify-between">
+                  <span class="rounded-full bg-amber-500/15 px-3 py-1 text-xs font-bold text-amber-300">منتج مميز</span>
+                  <span class="rounded-full border border-emerald-500/50 bg-emerald-500/10 px-3 py-1 text-xs font-bold text-emerald-300">طازج</span>
+                </div>
+
+                <div class="overflow-hidden rounded-[1.25rem] border border-white/10 bg-slate-900">
+                  <img
+                    src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=900&q=80"
+                    alt="منتجات كاله"
+                    class="img-cover h-72 w-full object-cover sm:h-80"
+                  />
+                </div>
+
+                <div class="mt-5 flex items-center justify-between gap-4">
+                  <div>
+                    <p class="text-sm text-slate-400">شريحة مختارة</p>
+                    <h2 class="text-2xl font-black text-white">جبن كاله كريمي</h2>
+                  </div>
+                  <div class="rounded-full border border-amber-400/50 bg-amber-400/10 px-3 py-2 text-sm font-bold text-amber-300">
+                    100% طبيعي
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass absolute -bottom-8 -right-6 w-48 rounded-2xl border border-white/10 p-4 shadow-soft">
+              <p class="text-xs text-slate-400">فرع الموصل</p>
+              <p class="mt-2 text-lg font-black text-white">تلكيف</p>
+              <p class="text-sm text-amber-300">0771 845 7634</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div class="mb-12 text-center">
+          <p class="mb-3 text-sm font-bold tracking-[0.25em] text-amber-300">لماذا كاله؟</p>
+          <h2 class="text-3xl font-black text-white sm:text-4xl">منتجات تليق ببيتك وبأسرتك</h2>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="rounded-[1.75rem] border border-white/10 bg-slate-900/70 p-7 shadow-soft">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-500/15 text-2xl text-amber-300">🥛</div>
+            <h3 class="mb-3 text-xl font-black text-white">طازج وموثوق</h3>
+            <p class="text-base leading-8 text-slate-300">
+              نخترع منتجاتنا بعناية لضمان نضارة كل عبوة وملء كل يوم بانتظام واهتمام.
+            </p>
+          </article>
+
+          <article class="rounded-[1.75rem] border border-white/10 bg-slate-900/70 p-7 shadow-soft">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-red-500/15 text-2xl text-red-300">✅</div>
+            <h3 class="mb-3 text-xl font-black text-white">معايير جودة عالية</h3>
+            <p class="text-base leading-8 text-slate-300">
+              نلتزم بالمعايير العالمية في المعالجة والتجهيز للحفاظ على الجودة والنكهة المميزة.
+            </p>
+          </article>
+
+          <article class="rounded-[1.75rem] border border-white/10 bg-slate-900/70 p-7 shadow-soft">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-500/15 text-2xl text-emerald-300">🚚</div>
+            <h3 class="mb-3 text-xl font-black text-white">توصيل سريع</h3>
+            <p class="text-base leading-8 text-slate-300">
+              خدمة طلبات سريعة ومباشرة لتسهيل الحصول على احتياجاتك الغذائية من خلال فرع الموصل.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="products" class="bg-slate-950/60 py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 flex flex-col items-center justify-between gap-6 text-center md:flex-row md:text-right">
+            <div>
+              <p class="mb-2 text-sm font-bold tracking-[0.25em] text-amber-300">منتجاتنا</p>
+              <h2 class="text-3xl font-black text-white sm:text-4xl">أفضل الاختيارات اليومية</h2>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-3 text-sm">
+              <button class="filter-btn active rounded-full border border-amber-400/50 bg-amber-500/10 px-4 py-2 font-bold text-amber-300" data-filter="all">الكل</button>
+              <button class="filter-btn rounded-full border border-white/10 bg-white/5 px-4 py-2 font-bold text-slate-200" data-filter="dairy">الألبان</button>
+              <button class="filter-btn rounded-full border border-white/10 bg-white/5 px-4 py-2 font-bold text-slate-200" data-filter="cheese">الأجبان</button>
+              <button class="filter-btn rounded-full border border-white/10 bg-white/5 px-4 py-2 font-bold text-slate-200" data-filter="icecream">الآيس كريم</button>
+            </div>
+          </div>
+
+          <div id="product-grid" class="grid gap-8 md:grid-cols-2 xl:grid-cols-3"></div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div class="rounded-[2rem] border border-white/10 bg-gradient-to-r from-slate-900 via-slate-900 to-slate-800 p-6 shadow-soft sm:p-8 lg:p-10">
+          <div class="grid items-center gap-10 lg:grid-cols-[1.1fr,0.9fr]">
+            <div>
+              <p class="mb-3 text-sm font-bold tracking-[0.25em] text-amber-300">ماذا نقدم؟</p>
+              <h2 class="text-3xl font-black text-white sm:text-4xl">حلول غذائية تناسب كل أسرة</h2>
+              <p class="mt-4 max-w-xl text-base leading-8 text-slate-300">
+                من منتجات الحليب اليومي إلى الأجبان والآيس كريم الخاص، نعمل على تلبية احتياجات
+                العائلات والمطاعم والمقاهي بمنتهى الجودة والاهتمام.
+              </p>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-amber-400/20 bg-amber-500/5 p-5">
+                <div class="mb-2 text-3xl">🏠</div>
+                <p class="text-lg font-black text-white">للاستخدام المنزلي</p>
+              </div>
+              <div class="rounded-2xl border border-red-500/20 bg-red-500/5 p-5">
+                <div class="mb-2 text-3xl">🍽️</div>
+                <p class="text-lg font-black text-white">للمنشآت والمطاعم</p>
+              </div>
+              <div class="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-5">
+                <div class="mb-2 text-3xl">🥤</div>
+                <p class="text-lg font-black text-white">للمشروبات والوجبات</p>
+              </div>
+              <div class="rounded-2xl border border-cyan-500/20 bg-cyan-500/5 p-5">
+                <div class="mb-2 text-3xl">🎉</div>
+                <p class="text-lg font-black text-white">للمناسبات والأعياد</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="branch" class="bg-slate-950/80 py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-12 text-center">
+            <p class="mb-2 text-sm font-bold tracking-[0.25em] text-amber-300">فرعنا</p>
+            <h2 class="text-3xl font-black text-white sm:text-4xl">فرع الموصل – تلكيف</h2>
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-[1fr,0.95fr]">
+            <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900 shadow-soft">
+              <img
+                src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
+                alt="موقع فرع الموصل"
+                class="img-cover h-full min-h-[340px] w-full"
+              />
+            </div>
+
+            <div class="space-y-5 rounded-[2rem] border border-white/10 bg-slate-900/80 p-7 shadow-soft">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <div class="mb-2 flex items-center gap-3 text-amber-300">
+                  <span class="text-2xl">📍</span>
+                  <span class="text-sm font-bold">العنوان</span>
+                </div>
+                <p class="text-lg font-bold text-white">شارع تلكيف - قرب سيطرة تلكيف</p>
+              </div>
+
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <div class="mb-2 flex items-center gap-3 text-amber-300">
+                  <span class="text-2xl">📞</span>
+                  <span class="text-sm font-bold">الهاتف</span>
+                </div>
+                <a href="tel:07718457634" class="text-2xl font-black text-white transition hover:text-amber-300">0771 845 7634</a>
+              </div>
+
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <div class="mb-2 flex items-center gap-3 text-amber-300">
+                  <span class="text-2xl">🕒</span>
+                  <span class="text-sm font-bold">أوقات العمل</span>
+                </div>
+                <p class="text-lg font-bold text-white">من الأحد إلى الخميس</p>
+                <p class="text-slate-300">9:00 صباحاً - 9:00 مساءً</p>
+              </div>
+
+              <a
+                href="https://wa.me/9647718457634?text=السلام%20عليكم%20شركة%20كاله%2C%20أرغب%20بطلب%20مباشر%20من%20فرع%20الموصل."
+                target="_blank"
+                rel="noreferrer"
+                class="inline-flex w-full items-center justify-center rounded-full bg-emerald-500 px-6 py-3.5 text-base font-black text-white transition hover:bg-emerald-400"
+              >
+                اطلب الآن عبر الواتساب
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div class="rounded-[2rem] border border-white/10 bg-slate-900/80 p-6 shadow-soft sm:p-8 lg:p-10">
+          <div class="grid gap-8 lg:grid-cols-[0.9fr,1.1fr]">
+            <div>
+              <p class="mb-2 text-sm font-bold tracking-[0.25em] text-amber-300">تواصل معنا</p>
+              <h2 class="text-3xl font-black text-white sm:text-4xl">أرسل طلبك بسهولة</h2>
+              <p class="mt-4 text-base leading-8 text-slate-300">
+                إذا كنت تبحث عن منتجات غذائية موثوقة وجاهزة للتسليم، تواصل معنا الآن وسنقوم
+                بالإجابة على طلبك بشكل فوري.
+              </p>
+
+              <div class="mt-6 space-y-4">
+                <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                  <span class="text-xl">📞</span>
+                  <a href="tel:07718457634" class="text-base font-bold text-white transition hover:text-amber-300">0771 845 7634</a>
+                </div>
+                <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                  <span class="text-xl">📍</span>
+                  <span class="text-base font-bold text-white">الرمز : الموصل - تلكيف</span>
+                </div>
+              </div>
+            </div>
+
+            <form id="order-form" class="space-y-5 rounded-[1.5rem] border border-white/10 bg-slate-950/80 p-5">
+              <div>
+                <label for="name" class="mb-2 block text-sm font-bold text-amber-300">الاسم / اسم المحل</label>
+                <input id="name" type="text" required class="w-full rounded-2xl border border-white/10 bg-slate-900 px-4 py-3 text-base text-white outline-none transition focus:border-amber-400" placeholder="اكتب الاسم" />
+              </div>
+
+              <div>
+                <label for="items" class="mb-2 block text-sm font-bold text-amber-300">المنتجات والكمية</label>
+                <textarea id="items" required rows="4" class="w-full rounded-2xl border border-white/10 bg-slate-900 px-4 py-3 text-base text-white outline-none transition focus:border-amber-400" placeholder="مثال: 10 عبوات حليب كامل الدسم، 5 عبوات لبن زبادي"></textarea>
+              </div>
+
+              <div>
+                <label for="notes" class="mb-2 block text-sm font-bold text-amber-300">ملاحظات إضافية</label>
+                <textarea id="notes" rows="3" class="w-full rounded-2xl border border-white/10 bg-slate-900 px-4 py-3 text-base text-white outline-none transition focus:border-amber-400" placeholder="ملاحظات أو عنوان التسليم"></textarea>
+              </div>
+
+              <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-6 py-3.5 text-base font-black text-slate-950 transition hover:bg-amber-300">
+                إرسال الطلب عبر الواتساب
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-slate-950/90">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-7 text-sm text-slate-300 sm:flex-row sm:px-6 lg:px-8">
+        <p>© 2025 شركة كاله للمنتجات الغذائية. جميع الحقوق محفوظة.</p>
+        <div class="flex items-center gap-4">
+          <a href="#top" class="transition hover:text-amber-300">الرئيسية</a>
+          <a href="#products" class="transition hover:text-amber-300">المنتجات</a>
+          <a href="#branch" class="transition hover:text-amber-300">فرع الموصل</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const products = [
+        {
+          id: 1,
+          name: 'قشطة كاله تترا باك',
+          category: 'cheese',
+          image: 'https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80',
+          desc: 'قشطة غنية بطعم دنيوي ناعم، مثالية للخبز والسلطات واليوميات.',
+          tag: 'الأكثر طلباً',
+        },
+        {
+          id: 2,
+          name: 'زبادي سون شير 7%',
+          category: 'dairy',
+          image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+          desc: 'زبادي عالي الجودة بنكهة متوازنة وقوام كريمي ممتاز للفطور اليومي.',
+          tag: 'مميز',
+        },
+        {
+          id: 3,
+          name: 'حليب كامل الدسم',
+          category: 'dairy',
+          image: 'https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=800&q=80',
+          desc: 'حليب طبي وذو قيمة غذائية عالية، مناسب للأسر والوجبات اليومية.',
+          tag: 'طازج',
+        },
+        {
+          id: 4,
+          name: 'جبن خامة ويلي',
+          category: 'cheese',
+          image: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80',
+          desc: 'جبن كريمي ناعم وقابل للدهن، مثالي للسندويشات والخبز والملفات.',
+          tag: 'كلاسيكي',
+        },
+        {
+          id: 5,
+          name: 'آيس كريم سوربون',
+          category: 'icecream',
+          image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=800&q=80',
+          desc: 'آيس كريم فاخر بنكهة الشوكولاتة المميزة مع لمسة ناعمة ومكسرات.',
+          tag: 'فاخر',
+        },
+        {
+          id: 6,
+          name: 'زبادي كاله بالعسل',
+          category: 'dairy',
+          image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=800&q=80',
+          desc: 'مزيج غني بالنكهة ورقيق في القوام، مناسب للوجبات الخفيفة النابضة بالطاقة.',
+          tag: 'مفضل',
+        },
+      ];
+
+      const productGrid = document.getElementById('product-grid');
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      let activeFilter = 'all';
+
+      function renderProducts(filter = 'all') {
+        const filteredProducts = filter === 'all' ? products : products.filter((item) => item.category === filter);
+
+        productGrid.innerHTML = filteredProducts
+          .map(
+            (product) => `
+              <article class="group overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/80 shadow-soft transition hover:-translate-y-1 hover:border-amber-400/50">
+                <div class="relative overflow-hidden">
+                  <img src="${product.image}" alt="${product.name}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+                  <span class="absolute right-4 top-4 rounded-full border border-amber-400/50 bg-slate-950/80 px-3 py-1 text-xs font-bold text-amber-300">${product.tag}</span>
+                </div>
+                <div class="space-y-4 p-6">
+                  <div class="flex items-center justify-between gap-3">
+                    <h3 class="text-2xl font-black text-white">${product.name}</h3>
+                  </div>
+                  <p class="line-clamp-2 text-base leading-8 text-slate-300">${product.desc}</p>
+                  <button
+                    class="cta-product inline-flex items-center gap-2 rounded-full border border-amber-400/50 bg-amber-400/10 px-4 py-2 text-sm font-bold text-amber-300 transition hover:bg-amber-400 hover:text-slate-950"
+                    data-product="${product.name}"
+                  >
+                    طلب المنتج
+                    <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </article>
+            `
+          )
+          .join('');
+
+        document.querySelectorAll('.cta-product').forEach((button) => {
+          button.addEventListener('click', (event) => {
+            const productName = event.currentTarget.getAttribute('data-product');
+            const message = encodeURIComponent(`السلام عليكم شركة كاله، أرغب في طلب منتج: ${productName}. هل يمكن تأكيد السعر والتوفر؟`);
+            window.open(`https://wa.me/9647718457634?text=${message}`, '_blank');
+          });
+        });
+      }
+
+      filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          activeFilter = button.dataset.filter;
+
+          filterButtons.forEach((btn) => {
+            btn.classList.remove('active', 'border-amber-400/50', 'bg-amber-500/10', 'text-amber-300');
+            btn.classList.add('border-white/10', 'bg-white/5', 'text-slate-200');
+          });
+
+          button.classList.add('active', 'border-amber-400/50', 'bg-amber-500/10', 'text-amber-300');
+          button.classList.remove('border-white/10', 'bg-white/5', 'text-slate-200');
+
+          renderProducts(activeFilter);
+        });
+      });
+
+      document.getElementById('order-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const items = document.getElementById('items').value.trim();
+        const notes = document.getElementById('notes').value.trim();
+
+        const message = `السلام عليكم شركة كاله (فرع الموصل)\n\nطلب جديد:\nالاسم: ${name}\nالمنتجات: ${items}\nملاحظات: ${notes || 'لا توجد ملاحظات'}`;
+
+        window.open(`https://wa.me/9647718457634?text=${encodeURIComponent(message)}`, '_blank');
+        this.reset();
+      });
+
+      renderProducts(activeFilter);
+    </script>
+  </body>
+</html>
